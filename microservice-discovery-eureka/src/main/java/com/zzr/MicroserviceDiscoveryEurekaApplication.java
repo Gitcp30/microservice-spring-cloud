@@ -12,7 +12,6 @@ import java.util.function.DoubleToIntFunction;
 public class MicroserviceDiscoveryEurekaApplication {
 
     public static void main(String[] args) {
-        System.out.print(11);
         SpringApplication.run(MicroserviceDiscoveryEurekaApplication.class, args);
     }
 }
