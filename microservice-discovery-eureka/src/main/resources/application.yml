@@ -5,7 +5,15 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://127.0.0.1:8761/eureka
+      defaultZone: http://user:pwd@127.0.0.1:8761/eureka
+security:
+  basic:
+    enabled: true
+  user:
+    name: user
+    password: pwd
+
+
 
 
 
