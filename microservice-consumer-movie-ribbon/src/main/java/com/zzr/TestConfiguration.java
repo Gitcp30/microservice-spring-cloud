@@ -1,4 +1,4 @@
-package com.ylz.config;
+package com.zzr;
 
 import com.netflix.client.config.IClientConfig;
 import com.netflix.loadbalancer.IRule;
@@ -14,6 +14,7 @@ import org.springframework.context.annotation.Configuration;
  * @date: 2017/12/25 23:43
  */
 @Configuration
+@ExcludeFromComponentScan
 public class TestConfiguration {
 
     @Autowired
