@@ -13,6 +13,7 @@
         <module>microservice-provider-user</module>
         <module>microservice-provider-user-ribbon</module>
         <module>microservice-consumer-movie-ribbon</module>
+        <module>microservice-consumer-movie-ribbon-prooerties-customizing</module>
         <module>microservice-discovery-eureka</module>
     </modules>
     <!---spring-boot-starter-parent 必须   -->

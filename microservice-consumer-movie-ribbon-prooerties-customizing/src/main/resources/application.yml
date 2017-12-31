@@ -1,0 +1,17 @@
+server:
+  port: 8012
+spring:
+  application:
+    name: microservice-consumer-movie-ribbon
+eureka:
+  client:
+    serviceUrl:
+       defaultZone: http://user:pwd@127.0.0.1:8761/eureka
+  instance:
+    prefer-ip-address: true  #注册到eureka上 使用本机id,作为访问
+    instance_id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+microservice-provider-user2:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
+
