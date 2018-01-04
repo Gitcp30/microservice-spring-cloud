@@ -1,8 +1,8 @@
 server:
-  port: 8084
+  port: 8011
 spring:
   application:
-    name: microservice-consumer-movie-feign-customizing
+    name: microservice-consumer-movie-ribbon-hystrix
 eureka:
   client:
     serviceUrl:
@@ -11,6 +11,3 @@ eureka:
     prefer-ip-address: true  #注册到eureka上 使用本机id,作为访问
     instance_id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
 
-logging:
-  level:
-    com.zzr.feign.UserFeignClient: DEBUG
